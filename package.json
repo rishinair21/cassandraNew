@@ -9,6 +9,7 @@
     "feather-icons": "^4.22.1",
     "gatsby": "^2.13.23",
     "gatsby-image": "^2.2.3",
+    "gatsby-plugin-mailchimp": "^5.1.2",
     "gatsby-plugin-manifest": "^2.2.0",
     "gatsby-plugin-offline": "^2.2.0",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.2",

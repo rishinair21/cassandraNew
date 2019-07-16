@@ -84,5 +84,12 @@ module.exports = {
                 },
             },
         },
+        {
+            resolve: 'gatsby-plugin-mailchimp',
+            options: {
+                endpoint:
+                    'https://anant.us1.list-manage.com/subscribe/post?u=d92549071121954997db2d1e1&amp;id=6f48ff83dd', // add your MC list endpoint here; see instructions below
+            },
+        },
     ],
 }
