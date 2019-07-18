@@ -38,3 +38,26 @@
         }
     }
 }
+
+.player-section {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; //16 x 9
+    position: relative;
+    @media screen and (max-width: 900px) {
+      height: 70vh;
+    }
+    align-items: center;
+    .player {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      
+    }
+  }
+
+.rodal-dialog {
+    // height: 80vh !important;
+    height: 400px !important;
+}

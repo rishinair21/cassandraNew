@@ -23,8 +23,12 @@ function IndexPage({ data }) {
             <Container>
                 <HeroSearch />
                 <Row>
-                    <Col md="3">
-                        <NewsFeeds newsFeeds={newsFeeds} />
+                    <Col md="3" className="newsfeed-home">
+                        <div className="heading">News Feeds</div>
+                        <NewsFeeds fontSize="16px" newsFeeds={newsFeeds} />
+                        <div className="view-more">
+                            <Link to="/news-feed/page/1">View More News Feeds</Link>
+                        </div>
                         <br />
                         <FeaturedVideos videoList={videoList} />
                     </Col>

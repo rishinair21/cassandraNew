@@ -18,7 +18,7 @@ function NewsFeedPage({ data, pageContext }) {
             <Container>
                 <Row>
                     <Col>
-                        <NewsFeeds newsFeeds={newsFeeds} />
+                        <NewsFeeds fontSize="25px" newsFeeds={newsFeeds} />
                         <Pagination {...pageContext} />
                     </Col>
                     <Col md="4">

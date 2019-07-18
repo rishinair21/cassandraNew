@@ -9,6 +9,7 @@ exports.createPages = ({ graphql, actions }) => {
     const resourcesTemplate = path.resolve(`src/templates/resourcesTemplate.js`)
     const resourceSinglePage = path.resolve(`src/templates/resourceSinglePage.js`)
     const newsFeedTemplate = path.resolve(`src/templates/newsFeedTemplate.js`)
+    const singleNewsFeed = path.resolve(`src/templates/singleNewsFeed.js`)
 
     return new Promise((resolve, reject) => {
         resolve(
@@ -79,10 +80,10 @@ exports.createPages = ({ graphql, actions }) => {
                 result.data.wallabagList.nodes.forEach(x => {
                     // loop over split pages
                     createPage({
-                        path: `/${x.id}`,
+                        path: `/post/${x.id}`,
                         component: resourceSinglePage,
                         context: {
-                            obj_id: x._id,
+                            obj_id: x.id,
                         },
                     })
                 })
@@ -128,10 +129,10 @@ exports.createPages = ({ graphql, actions }) => {
                 result.data.newsFeeds.nodes.forEach(x => {
                     // loop over split pages
                     createPage({
-                        path: `/${x.id}`,
-                        component: resourceSinglePage,
+                        path: `/feed/${x.id}`,
+                        component: singleNewsFeed,
                         context: {
-                            obj_id: x._id,
+                            obj_id: x.id,
                         },
                     })
                 })

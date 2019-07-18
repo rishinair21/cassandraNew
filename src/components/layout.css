@@ -24,6 +24,21 @@ body {
   color: #fff;
   border-radius: 3px;
 }
+.newsfeed-home .view-more {
+  text-align: center;
+}
+
+.newsfeed-home .view-more a {
+  font-size: 14px;
+}
+
+.newsfeed-home  .heading {
+  font-weight: 700;
+  border-left: 4px solid #000;
+  color: #4e4848;
+  padding-left: 5px;
+  line-height: 24px;
+}
 
 article,
 aside,

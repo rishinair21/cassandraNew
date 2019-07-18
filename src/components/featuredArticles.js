@@ -12,7 +12,7 @@ function FeaturedArticles({ wallabagList }) {
                     <small>{value.tags !== null && value.tags[0].label}</small>
                     <div key={key} className="article-card">
                         <div className="title">
-                            <Link to={`/${value.id}`}>{value.title}</Link>
+                            <Link to={`/post/${value.id}`}>{value.title}</Link>
                         </div>
                         <div
                             className="card-image"
